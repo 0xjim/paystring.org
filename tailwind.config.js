@@ -1,16 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/no-var-requires */
-const tailwindGradients = require('tailwindcss-gradients')
-
 module.exports = {
-  purge: ['./src/**/*.tsx', './src/**/*.css'],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-    standardFontWeights: true,
-  },
+  content: ['./src/**/*.tsx', './src/**/*.css'],
   theme: {
     fontFamily: {
       sans: [
@@ -191,73 +180,27 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
     },
-    linearGradientColors: (theme) => {
-      return {
-        gray: [theme('colors.gray.50')],
-        orange: [
-          theme('colors.orange-dark.500'),
-          theme('colors.orange-light.500'),
-        ],
-        'orange-dark': [
-          theme('colors.orange-dark.600'),
-          theme('colors.orange-light.600'),
-        ],
-        'orange-dark-to-light': [
-          theme('colors.orange-dark.500'),
-          theme('colors.orange.500'),
-          theme('colors.orange-light.500'),
-        ],
-        blue: [theme('colors.blue-dark.500'), theme('colors.blue-light.500')],
-        'blue-dark': [
-          theme('colors.blue-dark.600'),
-          theme('colors.blue-light.600'),
-        ],
-        green: [
-          theme('colors.green-dark.500'),
-          theme('colors.green-light.500'),
-        ],
-        'green-dark': [
-          theme('colors.green-dark.600'),
-          theme('colors.green-light.600'),
-        ],
-        purple: [
-          theme('colors.purple-dark.500'),
-          theme('colors.purple-light.500'),
-        ],
-        'purple-dark': [
-          theme('colors.purple-dark.600'),
-          theme('colors.purple-light.600'),
-        ],
-      }
-    },
     extend: {
       screens: {
         xxl: '1440px',
       },
       spacing: {
-        7: '1.75rem',
-        9: '2.25rem',
         '12-5': '3.125rem',
         13: '3.25rem',
-        14: '3.5rem',
         15: '3.75rem',
         17: '4.25rem',
         18: '4.5rem',
         22: '5.5rem',
         25: '6.25rem',
-        28: '7rem',
         29: '7.25rem',
         30: '7.5rem',
         35: '8.75rem',
-        36: '9rem',
         45: '11.25rem',
-        52: '13rem',
         70: '17.5rem',
         74: '18.5rem',
         78: '19.5rem',
         94: '23.5rem',
         112: '28rem',
-        // 16:9 aspect ratio
         '16-9': '56.25%',
       },
       boxShadow: {
@@ -279,18 +222,11 @@ module.exports = {
       inset: {
         '-4': '-1rem',
         '-3': '-0.75rem',
-        4: '1rem',
-        20: '5rem',
       },
       zIndex: {
         '-1': '-1',
       },
     },
   },
-  variants: {
-    margin: ['responsive', 'last', 'first'],
-    linearGradients: ['responsive', 'hover', 'focus'],
-    flexDirection: ['responsive', 'odd', 'even'],
-  },
-  plugins: [tailwindGradients],
+  plugins: [],
 }

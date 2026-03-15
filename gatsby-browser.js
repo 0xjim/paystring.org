@@ -1,5 +1,5 @@
 // custom typefaces
-require('typeface-inter')
+require('@fontsource/inter')
 require('./src/css/tailwind.css')
 
 exports.onRouteUpdate = function routeUpdate() {

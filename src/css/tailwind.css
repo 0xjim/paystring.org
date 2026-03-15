@@ -57,7 +57,7 @@
 .form-checkbox {
   @apply flex-shrink-0 inline-block w-4 h-4 text-orange-500 align-middle border border-white rounded appearance-none select-none bg-blue-dark-900;
 
-  color-adjust: exact;
+  print-color-adjust: exact;
   background-origin: border-box;
 }
 
@@ -76,7 +76,7 @@
 .form-radio {
   @apply flex-shrink-0 inline-block w-4 h-4 text-orange-500 align-middle border border-white rounded-full appearance-none select-none bg-blue-dark-900;
 
-  color-adjust: exact;
+  print-color-adjust: exact;
   background-origin: border-box;
 }
 
@@ -161,5 +161,39 @@
   .learnable-title {
     @apply text-3xl;
     @apply mt-36;
+  }
+}
+
+/* Gradient utilities — replaces tailwindcss-gradients plugin */
+@layer utilities {
+  .bg-gradient-r-orange {
+    background-image: linear-gradient(to right, #FF3600, #FF8100);
+  }
+  .bg-gradient-r-orange-dark {
+    background-image: linear-gradient(to right, #CC2B00, #CC6700);
+  }
+  .bg-gradient-r-orange-dark-to-light {
+    background-image: linear-gradient(to right, #FF3600, #FF5D00, #FF8100);
+  }
+  .bg-gradient-b-gray {
+    background-image: linear-gradient(to bottom, #EFEFF2, #EFEFF2);
+  }
+  .bg-gradient-r-blue {
+    background-image: linear-gradient(to right, #0044FF, #00CAFF);
+  }
+  .bg-gradient-r-blue-dark {
+    background-image: linear-gradient(to right, #0036CC, #00A2CC);
+  }
+  .bg-gradient-r-green {
+    background-image: linear-gradient(to right, #0DF22A, #9DFF00);
+  }
+  .bg-gradient-r-green-dark {
+    background-image: linear-gradient(to right, #0AC222, #7DCC00);
+  }
+  .bg-gradient-r-purple {
+    background-image: linear-gradient(to right, #8700FF, #C906F9);
+  }
+  .bg-gradient-r-purple-dark {
+    background-image: linear-gradient(to right, #6C00CC, #A005C7);
   }
 }
