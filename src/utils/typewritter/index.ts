@@ -132,9 +132,7 @@ export function setTypewriterOptions(options: TypewriterOptions) {
  * is invalid, the `onViolation` handler will be called.
  */
 function validateAgainstSchema(message: Record<string, any>, schema: object) {
-  const ajv = new Ajv({ schemaId: 'auto', allErrors: true, verbose: true })
-  ajv.addMetaSchema(require('ajv/lib/refs/json-schema-draft-06.json'))
-  ajv.addMetaSchema(require('ajv/lib/refs/json-schema-draft-04.json'))
+  const ajv = new Ajv({ allErrors: true, strict: false })
 
   if (!ajv.validate(schema, message) && ajv.errors) {
     onViolation(message, ajv.errors)
