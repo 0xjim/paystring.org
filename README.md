@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://paystring.org">
-    <img alt="PayString" src="https://paystring.org/icons/icon-72x72.png" width="60" />
+  <a href="#">
+    <img alt="PayString" src="#" width="60" />
   </a>
 </p>
 <h1 align="center">
   PayString Marketing Site
 </h1>
 
-This repository powers the [PayString.org](https://paystring.org) web application built using [Gatsby](https://gatsbyjs.org)
+This repository powers the [PayString.org](#) web application built using [Gatsby](https://gatsbyjs.org)
 
 ## 🚀 Quick start
 
@@ -31,7 +31,7 @@ This repository powers the [PayString.org](https://paystring.org) web applicatio
 
 3.  **Start editing!**
 
-    PayString.org is now running at `http://localhost:8000`!
+    PayString.org is now running at `http://localhost:8000`! (local dev server)
 
     Save your changes and the browser will update in real time!
 
@@ -65,7 +65,7 @@ A quick look at the top-level files and directories you'll see in the PayString.
 
 4.  **`/src`**: This directory contains all of the code related to what you will see on the front-end of PayString.org. `src` is a convention for “source code”.
 
-5.  **`/static`**: This directory contains any files or assets that will be accessible at the root of https://PayString.org. For instance favicon.ico can be accessed at https://PayString.org/favicon.ico.
+5.  **`/static`**: This directory contains any files or assets that will be accessible at the root of the site. For instance favicon.ico can be accessed at the site root `/favicon.ico`.
 
 6.  **`.dockerignore`**: This is a configuration file for [Docker](https://docker.com/). Dockerignore tells our docker build to exclude certain directories from the docker container.
 

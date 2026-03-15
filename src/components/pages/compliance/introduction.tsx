@@ -25,7 +25,7 @@ const Introduction: React.FC = () => {
             </p>
             <p className="mt-8">
               <a
-                href="https://www.fatf-gafi.org/media/fatf/documents/recommendations/RBA-VA-VASPs.pdf"
+                href="#"
                 target="_blank"
                 rel="noreferrer"
                 className="text-orange-500"

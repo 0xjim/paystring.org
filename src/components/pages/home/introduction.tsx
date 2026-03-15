@@ -114,7 +114,7 @@ const Introduction: React.FC = () => {
             controls
             onEnded={onVideoEnd}
             className="absolute object-cover w-full h-full overflow-hidden rounded-lg"
-            url="https://player.vimeo.com/video/466717408"
+            url="#"
             playIcon={<Play className="w-24" />}
             light={withPrefix('/assets/home/video-background.png')}
           />

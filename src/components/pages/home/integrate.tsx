@@ -194,7 +194,7 @@ const Integrate: React.FC = () => {
                   <div>
                     curl --location --request GET{' '}
                     <span className="text-green-300">
-                      &apos;https://ripplex.money/stormtv&apos;
+                      &apos;#&apos;
                     </span>{' '}
                     \
                   </div>
@@ -250,7 +250,7 @@ const Integrate: React.FC = () => {
                   <div>
                     &nbsp;&nbsp;
                     <span className="text-orange-300">
-                      &apos;https://xpring.money/stormtv&apos;
+                      &apos;#&apos;
                     </span>
                     ,
                   </div>
@@ -293,7 +293,7 @@ const Integrate: React.FC = () => {
               </div>
             </div>
           )}
-          {/* https://runkit.com/stormtv/payid-javascript */}
+          {/* # */}
           {activePanel === 'RippleX SDK' && (
             <>
               <div className="mt-6 mb-16 font-mono text-sm font-normal text-white rounded">
@@ -790,7 +790,7 @@ const Integrate: React.FC = () => {
           <Button
             label="Join Discord"
             className="mt-10"
-            to="https://chat.paystring.org/"
+            to="#"
           />
         </div>
         <div
@@ -802,7 +802,7 @@ const Integrate: React.FC = () => {
           <Button
             label="Join Discord"
             className="mt-10 mb-10"
-            to="https://chat.paystring.org/"
+            to="#"
           />
         </div>
       </div>

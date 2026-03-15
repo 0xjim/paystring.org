@@ -1,45 +1,45 @@
 export const getDocsLocation = (): string => {
   switch (process.env.GATSBY_RELEASE_ENV) {
     case 'dev':
-      return 'https://dev.docs.paystring.org'
+      return '#'
     case 'stage':
-      return 'https://stage.docs.paystring.org'
+      return '#'
     case 'prod':
-      return 'https://docs.paystring.org'
+      return '#'
     case 'psprod':
-      return 'https://docs.paystring.org'
+      return '#'
     default:
-      return 'http://localhost:3000'
+      return '#'
   }
 }
 
 export const getBaseURL = (): string => {
   switch (process.env.GATSBY_RELEASE_ENV) {
     case 'dev':
-      return 'https://dev.paystring.org'
+      return '#'
     case 'stage':
-      return 'https://stage.paystring.org'
+      return '#'
     case 'prod':
-      return 'https://paystring.org'
+      return '#'
     case 'psprod':
-      return 'https://paystring.org'
+      return '#'
     default:
-      return 'http://localhost:8000'
+      return '#'
   }
 }
 
 export const getCharityAppURL = (): string => {
   switch (process.env.GATSBY_RELEASE_ENV) {
     case 'dev':
-      return 'https://dev.wallet.ripplex.io/donation'
+      return '#'
     case 'stage':
-      return 'https://stage.ripplex.io/portal/donation'
+      return '#'
     case 'prod':
-      return 'https://ripplex.io/portal/donation'
+      return '#'
     case 'psprod':
-      return 'https://ripplex.io/portal/donation'
+      return '#'
     default:
-      return 'http://localhost:4000/donation'
+      return '#'
   }
 }
 

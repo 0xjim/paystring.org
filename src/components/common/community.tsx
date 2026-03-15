@@ -153,13 +153,13 @@ const Community: React.FC<CommunityProps> = (props) => {
     const encodedFormData = encodeFormData(formData)
 
     fetch(
-      `https://script.google.com/macros/s/AKfycbyT7zjGQMQKaSrE9ef1NuvAFGKGUc8cnnUGSFo7V5Q6HWeBx-DL/exec?${encodedFormData}`,
+      `#`,
       {
         mode: 'no-cors',
       },
     ).catch(() => {})
 
-    fetch('https://go.ripple.com/l/105572/2020-06-15/cspx4n', {
+    fetch('#', {
       mode: 'no-cors',
       method: 'POST',
       body: encodedFormData,

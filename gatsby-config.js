@@ -5,7 +5,7 @@ module.exports = {
     title: 'PayString',
     description:
       'The Universial Payment Identifier. A better way for your users to send and receive payments.',
-    siteUrl: 'https://paystring.org/',
+    siteUrl: '#',
     social: {
       twitter: 'pay_string',
     },

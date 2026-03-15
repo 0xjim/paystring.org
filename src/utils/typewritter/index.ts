@@ -642,7 +642,7 @@ export default new Proxy<typeof clientAPI>(clientAPI, {
         method,
       )}) that can't be found. Either:
     a) Re-generate your typewriter client: \`npx typewriter\`
-    b) Add it to your Tracking Plan: https://app.segment.com/ripplex/protocols/tracking-plans/rs_1ibhNXCFfrXSwj4y7YNiWCRf27l`)
+    b) Add it to your Tracking Plan: #`)
       const a = analytics()
       if (a) {
         a.track(

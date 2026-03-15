@@ -52,7 +52,7 @@ const Learn: React.FC<LearnProps> = (props) => {
         )})`,
       },
       title: 'API Reference',
-      link: 'https://api.PayString.org/?version=latest',
+      link: '#',
     },
     {
       bgStyle: {
@@ -74,14 +74,14 @@ const Learn: React.FC<LearnProps> = (props) => {
         backgroundImage: `url(${withPrefix('/assets/learn/travel-rule.svg')})`,
       },
       title: 'Travel Rule and Compliance',
-      link: 'https://trisa.io/',
+      link: '#',
     },
     {
       bgStyle: {
         backgroundImage: `url(${withPrefix('/assets/learn/checkout.svg')})`,
       },
       title: 'Checkout',
-      link: 'https://ripplex.io/portal/wallet/xrp/testnet',
+      link: '#',
     },
     {
       bgStyle: {

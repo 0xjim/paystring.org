@@ -73,7 +73,7 @@ const Nav: React.FC<NavProps> = (props: NavProps) => {
         {
           text: 'API Documentation',
           description: 'Start building with PayString',
-          location: 'https://api.paystring.org/',
+          location: '#',
           icon: ApiDocumentIcon,
           external: true,
         },
@@ -83,7 +83,7 @@ const Nav: React.FC<NavProps> = (props: NavProps) => {
         links: [
           {
             text: 'Join Discord',
-            location: 'https://chat.paystring.org/',
+            location: '#',
             external: true,
           },
           {
@@ -100,7 +100,7 @@ const Nav: React.FC<NavProps> = (props: NavProps) => {
     },
     {
       text: 'Blog',
-      location: 'https://blog.paystring.org/',
+      location: '#',
     },
     {
       text: 'Sign In',

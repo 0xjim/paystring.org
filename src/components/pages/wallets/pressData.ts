@@ -11,7 +11,7 @@ export default [
     bottomDescription:
       'Ripple debuts digital ID project with 40 companies on board',
     link:
-      'https://www.paymentssource.com/news/ripple-debuts-digital-id-project-with-40-companies-on-board',
+      '#',
   },
   {
     logo: Fortune,
