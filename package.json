@@ -4,7 +4,7 @@
   "description": "Marketing Website for PayString",
   "homepage": "https://github.com/paystring/paystring.org#readme",
   "engines": {
-    "node": ">= 18"
+    "node": "18.x"
   },
   "dependencies": {
     "@fontsource/inter": "^5.0.0",
