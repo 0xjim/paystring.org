@@ -5,7 +5,7 @@ module.exports = {
     title: 'PayString',
     description:
       'The Universial Payment Identifier. A better way for your users to send and receive payments.',
-    siteUrl: '#',
+    siteUrl: 'https://paystring-org.vercel.app',
     social: {
       twitter: 'pay_string',
     },
