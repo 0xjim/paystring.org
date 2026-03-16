@@ -109,10 +109,10 @@ const Nav: React.FC<NavProps> = (props: NavProps) => {
   ]
 
   const bannerProps = {
-    title: 'payme-plus',
-    description: 'Get a PayString today with PayMe+',
-    link:
-      'https://www.payme.plus/?utm_source=RippleBanner&utm_medium=link&utm_campaign=RippleWebBanner',
+    title: 'archival-notice',
+    description:
+      'This website is only for ARCHIVAL purposes. Execution will not work, and everything is done at the discretion of the user.',
+    link: '',
     enabled: true,
   }
 

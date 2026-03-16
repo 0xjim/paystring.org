@@ -1,11 +1,9 @@
 import { withPrefix } from 'gatsby'
 import lottie, { AnimationItem } from 'lottie-web'
-import React, { useState, useCallback, useRef } from 'react'
-import ReactPlayer from 'react-player'
+import React, { useState, useCallback } from 'react'
 
 import BetterUX from '../../../assets/home/introduction/better-ux.svg'
 import OpenSource from '../../../assets/home/introduction/open-source.svg'
-import Play from '../../../assets/home/introduction/play.svg'
 import TechStack from '../../../assets/home/introduction/tech-stack.svg'
 import { getDocsLocation } from '../../../utils/config'
 import Button from '../../common/button'
@@ -14,8 +12,6 @@ import Wave from '../../common/wave'
 import bgImage from './background-animation.json'
 
 const Introduction: React.FC = () => {
-  const videoRef = useRef<ReactPlayer>(null)
-  const [playing, setPlaying] = useState(false)
   const [backgroundAnimation, setBackgroundAnimation] = useState<
     AnimationItem
   >()
@@ -62,12 +58,6 @@ const Introduction: React.FC = () => {
     },
   ]
 
-  const onVideoEnd = useCallback(() => {
-    if (videoRef.current) {
-      videoRef.current.showPreview()
-    }
-  }, [videoRef])
-
   return (
     <Wave
       wave="white"
@@ -86,7 +76,7 @@ const Introduction: React.FC = () => {
           A better way for your users to send and receive payments
         </p>
         <div className="hidden md:flex">
-          <a href={getDocsLocation()} className="mr-8">
+          <a href="https://paystring-documentation.vercel.app/" className="mr-8">
             <Button size="lg" label="Start Building" />
           </a>
           <Button
@@ -97,26 +87,16 @@ const Introduction: React.FC = () => {
           />
         </div>
         <div className="md:hidden">
-          <a href={getDocsLocation()} className="mr-6">
+          <a href="https://paystring-documentation.vercel.app/" className="mr-6">
             <Button label="Start Building" />
           </a>
           <Button to="contact" variant="secondary" label="Learn More" />
         </div>
         <div className="relative w-full h-full p-px mt-20 border-2 rounded-lg border-blue-dark-500 pb-16-9">
-          <ReactPlayer
-            ref={videoRef}
-            playing={playing}
-            onReady={() => {
-              setPlaying(true)
-            }}
-            width="100%"
-            height="100%"
-            controls
-            onEnded={onVideoEnd}
+          <img
+            src={withPrefix('/assets/home/video-background.png')}
+            alt="PayString overview"
             className="absolute object-cover w-full h-full overflow-hidden rounded-lg"
-            url="#"
-            playIcon={<Play className="w-24" />}
-            light={withPrefix('/assets/home/video-background.png')}
           />
         </div>
         <div className="grid grid-cols-1 gap-16 mt-24 lg:mt-36 lg:gap-28 lg:grid-cols-3">
